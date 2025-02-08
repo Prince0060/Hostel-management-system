@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!----------------------------- left side menu ----------------------------------------------------->
+            <div class="left-side-menu">
+                <div onclick="location.href = 'https://nith.ac.in/'"  class="logo">
+                    <a href="#">
+                        <img src="../images/logo1.png" alt="logo" />
+                    </a>
+                </div>
+
+                <div class="sub-menu">
+                    <a href="#">
+                        <li onclick="location.href = 'http://127.0.0.1:5500/html/homepage.html#'">Home</li>
+                    </a>
+                    <a href="#">
+                        <li onclick="location.href = 'http://127.0.0.1:5500/html/aboutpage.html#'">About NITH</li>
+                    </a>
+                </div>
+            </div>
+
+            <!---------------------------------- right side menu --------------------------------------->
+            <div class="right-side-menu">
+                <div class="sub-menu">
+                    <a href="#">
+                        <li onclick="location.href = 'http://localhost:4200/manage'">Admin Log In</li>
+                        <li onclick="location.href = 'http://localhost:4200/login'">Student Log In</li>
+                    </a>
+                    <button onclick="location.href = 'http://localhost:4200/register'">Sign up</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!----------------------------------------- our image Slider section ------------------------------------->
+    <section>
+        <style>
+            .imageSlider {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                width: 60%;
+                height: 100vh;
+                width: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                /* padding: 2vw 5vw; */
+                /* background-image: url("images/img1.jpg"); */
+                background-size: 100% 100%;
+                box-shadow: rgba(149. 157, 165, 0.2) 0px 8px 24px;
+                animation: changeimg 20s linear infinite;
+            }
+
+            @keyframes changeimg {
+                0%{
+                    background-image: url("../images/img1.jpg");
+                }
+                25%{
+                    background-image: url("../images/img2.jpg");
+                }
+                75%{
+                    background-image: url("../images/img3.jpg");
+                }
+                100%{
+                    background-image: url("../images/img4.jpg");
+                }
+            }
+        </style>
+        <div class="imageSlider"></div>
+    </section>
+
+    <!---------------------------------- anouncement section ------------------------------------->
+    <div class="anounce">
+        <div class="heading">
+            <a href="#">
+                <li>Anouncement</li>
+            </a>
+        </div>
+        
+    </div>   
+    <div class="anounce_body">
+        <h4>
+            > Global internship oportunity by Student organization.
+        </h4>     
+        <h4>
+            > Instructions for Mid Term Examination.
+        </h4>   
+        <h4>
+            > Summer training internship with Live Projects.
+        </h4>
+        <h4>
+            > this is for desc
+        </h4>
+    </div> 
+</body>
+
+</html>
