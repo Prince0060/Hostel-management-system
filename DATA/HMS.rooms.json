@@ -1,0 +1,369 @@
+[{
+  "_id": {
+    "$oid": "65ceeabb3af6d04344cc25a8"
+  },
+  "studentInfo": [
+    {
+      "_id": {
+        "$oid": "65cc8405f4227421f4999df2"
+      },
+      "rollNumber": "101",
+      "branch": "MCA",
+      "year": 3,
+      "name": "Akshay",
+      "address": "Vijay Vihar, Karkaduma, vehan",
+      "fatherName": "Bhim Kumar",
+      "motherName": "Seema Devi",
+      "contactNumber": "9876543210",
+      "parentsContactNumber": "1234567890",
+      "email": "mail@gmail.com",
+      "password": "$2a$10$FaC7GhFzrZUKYsF/imN9duuuKZgCWuJVhpJxJz/SnC7Kz8PIIFuui",
+      "status": "true",
+      "createdAt": {
+        "$date": "2024-02-14T09:12:37.686Z"
+      },
+      "updatedAt": {
+        "$date": "2024-02-14T09:12:37.686Z"
+      },
+      "__v": 0
+    }
+  ],
+  "roomNo": "101",
+  "roomType": "Sharing",
+  "floorNo": 1,
+  "createdAt": {
+    "$date": "2024-02-16T04:55:23.275Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:22:45.554Z"
+  },
+  "__v": 74
+},
+{
+  "_id": {
+    "$oid": "65cf19a6ad4a942c60c49a0e"
+  },
+  "studentInfo": [],
+  "roomNo": "102",
+  "roomType": "Sharing",
+  "floorNo": 1,
+  "createdAt": {
+    "$date": "2024-02-16T08:15:34.827Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:44:01.624Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "65d2c6069134df17083f407f"
+  },
+  "studentInfo": [],
+  "roomNo": "201",
+  "roomType": "Sharing",
+  "floorNo": 2,
+  "createdAt": {
+    "$date": "2024-02-19T03:07:50.453Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:23:11.985Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65d2c6129134df17083f408e"
+  },
+  "studentInfo": [],
+  "roomNo": "202",
+  "roomType": "Sharing",
+  "floorNo": 2,
+  "createdAt": {
+    "$date": "2024-02-19T03:08:02.551Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T03:08:02.551Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d2c6199134df17083f409d"
+  },
+  "studentInfo": [],
+  "roomNo": "203",
+  "roomType": "Sharing",
+  "floorNo": 2,
+  "createdAt": {
+    "$date": "2024-02-19T03:08:09.402Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T03:08:09.402Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d2c6219134df17083f40ac"
+  },
+  "studentInfo": [],
+  "roomNo": "301",
+  "roomType": "Sharing",
+  "floorNo": 3,
+  "createdAt": {
+    "$date": "2024-02-19T03:08:17.664Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T03:08:17.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d2c62a9134df17083f40bb"
+  },
+  "studentInfo": [],
+  "roomNo": "401",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-19T03:08:26.878Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-20T13:11:48.169Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65d2c6339134df17083f40ca"
+  },
+  "studentInfo": [
+    {
+      "_id": {
+        "$oid": "65d83b45df8683408459ab71"
+      },
+      "name": "kunal",
+      "rollNumber": "1068"
+    }
+  ],
+  "roomNo": "402",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-19T03:08:35.502Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-23T06:32:54.631Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65d2c63c9134df17083f40d9"
+  },
+  "studentInfo": [
+    {
+      "_id": {
+        "$oid": "65d5c5f538807ba0a975a560"
+      },
+      "name": "Kashap1",
+      "rollNumber": "4011"
+    }
+  ],
+  "roomNo": "403",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-19T03:08:44.922Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T05:19:52.196Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65d56aacd851e81cc88e2515"
+  },
+  "studentInfo": [
+    {
+      "_id": {
+        "$oid": "65d5813885d3541e905310c5"
+      },
+      "name": "Kashap",
+      "rollNumber": "4011"
+    }
+  ],
+  "roomNo": "404",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:14:52.297Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-23T06:32:54.631Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65d56ab6d851e81cc88e2524"
+  },
+  "studentInfo": [],
+  "roomNo": "405",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:15:02.720Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-23T06:31:55.817Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65d56abfd851e81cc88e2533"
+  },
+  "studentInfo": [],
+  "roomNo": "406",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:15:11.009Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T05:01:17.676Z"
+  },
+  "__v": 14
+},
+{
+  "_id": {
+    "$oid": "65d56ac6d851e81cc88e2542"
+  },
+  "studentInfo": [],
+  "roomNo": "407",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:15:18.794Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-21T03:15:18.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d56ad2d851e81cc88e2551"
+  },
+  "studentInfo": [],
+  "roomNo": "408",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:15:30.277Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T05:01:17.676Z"
+  },
+  "__v": 7
+},
+{
+  "_id": {
+    "$oid": "65d56adcd851e81cc88e2560"
+  },
+  "studentInfo": [],
+  "roomNo": "409",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:15:40.302Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T04:35:05.439Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "65d56ae5d851e81cc88e256f"
+  },
+  "studentInfo": [],
+  "roomNo": "410",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:15:49.254Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T04:37:44.098Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "65d56afad851e81cc88e2581"
+  },
+  "studentInfo": [],
+  "roomNo": "411",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:16:10.982Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T02:56:39.370Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "65d56b04d851e81cc88e2590"
+  },
+  "studentInfo": [],
+  "roomNo": "412",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:16:20.375Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-21T03:16:20.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d56b0ed851e81cc88e259f"
+  },
+  "studentInfo": [],
+  "roomNo": "413",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:16:30.664Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-21T03:16:30.664Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d56b22d851e81cc88e25b1"
+  },
+  "studentInfo": [],
+  "roomNo": "414",
+  "roomType": "Single",
+  "floorNo": 4,
+  "createdAt": {
+    "$date": "2024-02-21T03:16:50.896Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-21T03:16:50.896Z"
+  },
+  "__v": 0
+}]

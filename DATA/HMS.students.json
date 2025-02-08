@@ -1,0 +1,179 @@
+[{
+  "_id": {
+    "$oid": "65cc8405f4227421f4999df2"
+  },
+  "rollNumber": "101",
+  "branch": "MCA",
+  "year": 3,
+  "name": "Akshay",
+  "address": "Vijay Vihar, Karkaduma, vehan",
+  "fatherName": "Bhim Kumar",
+  "motherName": "Seema Devi",
+  "contactNumber": "9876543210",
+  "parentsContactNumber": "1234567890",
+  "email": "mail@gmail.com",
+  "password": "$2a$10$FaC7GhFzrZUKYsF/imN9duuuKZgCWuJVhpJxJz/SnC7Kz8PIIFuui",
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-14T09:12:37.686Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-14T09:12:37.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cdf12b6fc5f731e0cb2dab"
+  },
+  "rollNumber": "778",
+  "branch": "nj",
+  "year": 2,
+  "name": "n",
+  "address": "jn",
+  "fatherName": "n",
+  "motherName": "nj",
+  "contactNumber": "nj",
+  "parentsContactNumber": "n",
+  "email": "sk@gmail.com",
+  "password": "$2a$10$JHfEM48fhfXa4px/7kk6MeR.zn7MXIJ33yHBBNCtE28IgilDS7N8G",
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-15T11:10:35.828Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T11:10:35.828Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf1918ad4a942c60c49957"
+  },
+  "rollNumber": "103",
+  "branch": "BCA",
+  "year": 3,
+  "name": "Sourabh",
+  "address": "Address of the student is enter",
+  "fatherName": "Nikhil",
+  "motherName": "Sunita",
+  "contactNumber": "9876543210",
+  "parentsContactNumber": "123456789",
+  "email": "sau@gmail.com",
+  "password": "$2a$10$cRZDICdlNx8VA31h5vJVzepfUTqlh5/pvkkxvNV16QI7Q40OZvYHC",
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-16T08:13:12.999Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-16T08:13:12.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d305b59134df17083f4554"
+  },
+  "rollNumber": "106",
+  "branch": "MCA",
+  "year": 4,
+  "name": "KKH",
+  "address": "ADDRESS INFO",
+  "fatherName": "SAHIL",
+  "motherName": "SONY",
+  "contactNumber": "7899456666",
+  "parentsContactNumber": "114666589",
+  "email": "dailycarepharma@gmail.com",
+  "password": "$2a$10$/Gx5gmga3zKdGk8ALmkKEe7VukJ5Y8UNoOhtvSTiS/xEXsIDWnHsi",
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-19T07:39:33.426Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-20T08:16:52.697Z"
+  },
+  "__v": 0,
+  "isverified": true,
+  "roomSuggestion": []
+},
+{
+  "_id": {
+    "$oid": "65d5813885d3541e905310c5"
+  },
+  "isverified": true,
+  "roomSuggestion": [],
+  "rollNumber": "4011",
+  "branch": "MCA",
+  "year": 4,
+  "name": "Kashap",
+  "address": "Sunil nagar jeevan park sarai diojf, jaipur",
+  "fatherName": "Sunil",
+  "motherName": "Depika",
+  "contactNumber": "12556566",
+  "parentsContactNumber": "56566526526",
+  "email": "prateekguptadel@gmail.com",
+  "password": "$2a$10$MtgddKdodyIQQPbnu3O5KupCfb3zowNEuXCy2MLjQW21Q5soIJdiW",
+  "cgpercent": 7.9,
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-21T04:51:04.406Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-23T06:32:54.640Z"
+  },
+  "__v": 6
+},
+{
+  "_id": {
+    "$oid": "65d5c5f538807ba0a975a560"
+  },
+  "isverified": true,
+  "roomSuggestion": [],
+  "rollNumber": "4011",
+  "branch": "MCA",
+  "year": 4,
+  "name": "Kashap1",
+  "address": "Sunil nagar jeevan park sarai diojf, jaipur",
+  "fatherName": "Sunil",
+  "motherName": "Depika",
+  "contactNumber": "12556566",
+  "parentsContactNumber": "56566526526",
+  "email": "prateekguptadel1@gmail.com",
+  "password": "$2a$10$MtgddKdodyIQQPbnu3O5KupCfb3zowNEuXCy2MLjQW21Q5soIJdiW",
+  "cgpercent": 8.5,
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-21T04:51:04.406Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-22T05:19:52.207Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "65d83b45df8683408459ab71"
+  },
+  "isverified": true,
+  "roomSuggestion": [],
+  "rollNumber": "1068",
+  "branch": "mca",
+  "year": 4,
+  "name": "kunal",
+  "address": "addres",
+  "fatherName": "vfhgfvg",
+  "motherName": "ghgh",
+  "contactNumber": "67676776",
+  "parentsContactNumber": "676786",
+  "email": "infoprojectadda@gmail.com",
+  "password": "$2a$10$SaYZjkTHHldbkrzWKe2wHOfI9KF.6B.lb/ZpYaV.ztR8AGeEOk8ZK",
+  "cgpercent": 8.6,
+  "status": "true",
+  "createdAt": {
+    "$date": "2024-02-23T06:29:25.827Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-23T06:46:44.668Z"
+  },
+  "__v": 2
+}]

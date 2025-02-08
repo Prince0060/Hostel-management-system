@@ -1,0 +1,203 @@
+[{
+  "_id": {
+    "$oid": "65cefe5b0066683fb811e97d"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65ceeabb3af6d04344cc25a8"
+    },
+    "roomNo": "101",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65cc8405f4227421f4999df2"
+    },
+    "name": "Akshay"
+  },
+  "complaintType": "ELECTRIAL",
+  "description": "MYDES",
+  "action": 2,
+  "createdAt": {
+    "$date": "2024-02-16T06:19:07.564Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-17T14:05:13.576Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf10cc4c9b330ac8ba8780"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65ceeabb3af6d04344cc25a8"
+    },
+    "roomNo": "101",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65cc8405f4227421f4999df2"
+    },
+    "name": "Akshay"
+  },
+  "complaintType": "Plumbing Work",
+  "description": "Side wall Tap Leckage",
+  "action": 2,
+  "createdAt": {
+    "$date": "2024-02-16T07:37:48.275Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-17T14:05:37.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf112c4c9b330ac8ba8785"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65ceeabb3af6d04344cc25a8"
+    },
+    "roomNo": "101",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65cc8405f4227421f4999df2"
+    },
+    "name": "Akshay"
+  },
+  "complaintType": "Plumbing Work",
+  "description": "Side wall Tap Leckage",
+  "action": 1,
+  "createdAt": {
+    "$date": "2024-02-16T07:39:24.083Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-16T07:39:24.083Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf115a4c9b330ac8ba879a"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65ceeabb3af6d04344cc25a8"
+    },
+    "roomNo": "101",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65cc8405f4227421f4999df2"
+    },
+    "name": "Akshay"
+  },
+  "complaintType": "Electrical Work",
+  "description": "Sparking in Blub",
+  "action": 1,
+  "createdAt": {
+    "$date": "2024-02-16T07:40:10.443Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-16T07:40:10.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf197dad4a942c60c499d5"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65ceeabb3af6d04344cc25a8"
+    },
+    "roomNo": "101",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65cc8405f4227421f4999df2"
+    },
+    "name": "Akshay"
+  },
+  "complaintType": "Theft Complaint",
+  "description": "my pen is theft",
+  "action": 1,
+  "createdAt": {
+    "$date": "2024-02-16T08:14:53.842Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-16T08:14:53.842Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d305569134df17083f4527"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65ceeabb3af6d04344cc25a8"
+    },
+    "roomNo": "101",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65cc8405f4227421f4999df2"
+    },
+    "name": "Akshay"
+  },
+  "complaintType": "Civil Work",
+  "description": "room door broken",
+  "action": 2,
+  "createdAt": {
+    "$date": "2024-02-19T07:37:58.030Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:38:13.786Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d305f99134df17083f4596"
+  },
+  "roomInfo": {
+    "_id": {
+      "$oid": "65cf19a6ad4a942c60c49a0e"
+    },
+    "roomNo": "102",
+    "roomType": "Sharing",
+    "floorNo": 1
+  },
+  "studentInfo": {
+    "_id": {
+      "$oid": "65d305b59134df17083f4554"
+    },
+    "name": "KKH"
+  },
+  "complaintType": "Plumbing Work",
+  "description": "TAP LEAK",
+  "action": 1,
+  "createdAt": {
+    "$date": "2024-02-19T07:40:41.091Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:40:41.091Z"
+  },
+  "__v": 0
+}]

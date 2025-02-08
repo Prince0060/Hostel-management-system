@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "65cc7b204ba6513680c1c1b2"
+  },
+  "heading": "Co-curricular",
+  "description": "Global internship oportunity by Student organization.",
+  "status": true,
+  "createdAt": {
+    "$date": "2024-02-14T08:34:40.303Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-14T08:34:40.303Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cc7b404ba6513680c1c1b4"
+  },
+  "heading": "Examination",
+  "description": "Instructions for Mid Term Examination.",
+  "status": true,
+  "createdAt": {
+    "$date": "2024-02-14T08:35:12.354Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-14T08:35:12.354Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cc7b684ba6513680c1c1b6"
+  },
+  "heading": "Academic",
+  "description": "Summer training internship with Live Projects.",
+  "status": true,
+  "createdAt": {
+    "$date": "2024-02-14T08:35:52.026Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-14T08:35:52.026Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ce75ca5303212964efb606"
+  },
+  "heading": "new heading",
+  "description": "this is for desc",
+  "status": true,
+  "createdAt": {
+    "$date": "2024-02-15T20:36:26.948Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-15T20:36:26.948Z"
+  },
+  "__v": 0
+}]
