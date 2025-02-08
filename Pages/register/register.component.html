@@ -1,0 +1,123 @@
+<div class="container">
+    <main>
+        <div class="logo" title="Online Hostel Management System">
+            <img src="assets/images/ezee-logo.png" alt="">
+            <h2>H<span class="danger">M</span>S</h2>
+        </div>
+        <div class="change-password-container">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <h2>Registration</h2>
+                <p class="text-muted">Fill this form for register yourself.</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Roll No.</p>
+                            <input placeholder="Enter Roll no." formControlName="rollNumber" type="string" maxlength="8"
+                                [class.valid]="registerForm.get('rollNumber')!.valid && 
+                            (registerForm.get('rollNumber')!.dirty || registerForm.get('rollNumber')!.touched)"
+                                [class.invalid]="registerForm.get('rollNumber')!.invalid && 
+                            (registerForm.get('rollNumber')!.dirty || registerForm.get('rollNumber')!.touched)">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Branch</p>
+                            <input placeholder="Enter Course" formControlName="branch" type="text" onkeydown="return /[a-z, ]/i.test(event.key)"
+                            onblur="if (this.value == '') {this.value = '';}"
+                            onfocus="if (this.value == '') {this.value = '';}">
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Year</p>
+                            <select #year className="_reg_select" formControlName="year">
+                                <option selected value="1">1st Year</option>
+                                <option value="2">2nd Year</option>
+                                <option value="3">3rd Year</option>
+                                <option value="4">4th Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col" *ngIf="year.value == '4'">
+                        <div class="box">
+                            <p class="text-muted">CG(%)</p>
+                            <input placeholder="Enter Percent" formControlName="cgpercent" type="number">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="text-muted">Name</p>
+                    <input placeholder="Enter Student Name" formControlName="name" type="text" onkeydown="return /[a-z, ]/i.test(event.key)"
+                    onblur="if (this.value == '') {this.value = '';}"
+                    onfocus="if (this.value == '') {this.value = '';}">
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Father's Name</p>
+                            <input placeholder="Enter Father's Name" type="text" formControlName="fatherName" onkeydown="return /[a-z, ]/i.test(event.key)"
+                            onblur="if (this.value == '') {this.value = '';}"
+                            onfocus="if (this.value == '') {this.value = '';}">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Mother's Name</p>
+                            <input placeholder="Enter Mother's Name" type="text" formControlName="motherName" onkeydown="return /[a-z, ]/i.test(event.key)"
+                            onblur="if (this.value == '') {this.value = '';}"
+                            onfocus="if (this.value == '') {this.value = '';}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Contact No.</p>
+                            <input placeholder="Enter Number" type="text" formControlName="contactNumber" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Parents Contact No.</p>
+                            <input placeholder="Enter Parents Contact No" type="text"
+                                formControlName="parentsContactNumber" maxlength="10">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="text-muted">Address</p>
+                    <input placeholder="Enter Address" formControlName="address" type="text">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Email Address</p>
+                            <input email placeholder="Enter Email Address" formControlName="email" type="email">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <p class="text-muted">Password</p>
+                            <input email placeholder="Enter Password" formControlName="password" type="password">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" value="Register" mat-raised-button color="primary" class="btn">
+                    <a href="index.html" class="text-muted">Cancel</a>
+                </div>
+                <div class="mrow">
+                    <div class="col">
+                        <a [routerLink]="['/login']">
+                            <p>Already register?</p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>

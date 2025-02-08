@@ -1,0 +1,68 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="logo" title="Online Hostel Management System">
+        <img src="assets/images/ezee-logo.png" alt="">
+        <h2>H<span class="danger">M</span>S</h2>
+    </div>
+</header><!-- End Header -->
+
+<div class="container">
+    <aside>
+        <div class="profile" *ngIf="studentInfo">
+            <div class="top">
+                <div class="profile-photo">
+                    <img src="assets/images/user.png" alt="image_user">
+                </div>
+                <div class="info">
+                    <p>Hey, <b>{{studentInfo?.name}}</b> </p>
+                    <small class="text-muted">{{studentInfo?._id | slice:0:12}}</small>
+                </div>
+            </div>
+            <div class="about">
+                <h5>Course</h5>
+                <p>{{studentInfo?.branch}}, Year:{{studentInfo?.year}}</p>
+                <h5>DOB</h5>
+                <p>29-Feb-2020</p>
+                <h5>Contact</h5>
+                <p>{{studentInfo?.contactNumber}}</p>
+                <h5>Email</h5>
+                <p>{{studentInfo?.email}}</p>
+                <h5>Address</h5>
+                <p>{{studentInfo?.address}}</p>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <h1>Room Selection</h1>
+
+        <div class="_hostel">
+            <div [ngClass]="{ _selectedroom: dataInfo.includes(item) }" (click)="roomSelect(item)" class="_room"
+                *ngFor="let i = index; let item of roomInfo">
+                <img src="assets/images/room.png" alt="">
+                <p>{{item.roomNo}}</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col" style="text-align: center;">
+                <button (click)="roomSuggestion()" style="background-color: #ccc;" [disabled]="dataInfo==null" color="accent" mat-raised-button>
+                    Assign Room</button>
+            </div>
+        </div>
+    </main>
+    <div class="right">
+        <div class="_room_data" *ngIf="dataInfo!">
+            <h4 class="_heading">Room Preferances</h4>
+            <mat-card *ngFor="let obj of dataInfo" class="example-card"
+                style="background-color: #fff;margin-bottom: 5px;">
+                <mat-card-content class="_content">
+                    <p><span>Room Number:</span><span>{{obj.roomNo}}</span><span
+                            style="color: var(--color-primary);">Floor No:</span><span>{{obj.floorNo}}</span></p>
+                    <p><span>Room Type:</span><span>{{obj.roomType}}</span></p>
+                    <p></p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+
+    </div>
+</div>

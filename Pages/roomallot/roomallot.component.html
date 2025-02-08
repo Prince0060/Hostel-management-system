@@ -1,0 +1,88 @@
+
+<header  id="header" class="header fixed-top d-flex align-items-center">
+    <div class="logo" title="Online Hostel Management System">
+        <img src="assets/images/ezee-logo.png" alt="">
+        <h2>H<span class="danger">M</span>S</h2>
+        <!-- <a class="logoutss" href="frontview">logout</a> -->
+        
+    </div>
+</header><!-- End Header -->
+<!-- <body>
+    <h1>National Institute Of Technology</h1>
+</body> -->
+
+    
+
+
+<div class="container">
+    <app-aside-profile #profile></app-aside-profile>
+    <main>
+        <h1>Room Selection</h1>
+
+        <div class="_hostel">
+            <div class="_floor" *ngFor="let i of floorsInfo">
+                
+                <mat-expansion-panel class="panel">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                        <div class="_floorTitle">
+                      Floor{{i}}
+                    </div>
+                    </mat-panel-title>
+                    </mat-expansion-panel-header>
+                  <div [ngClass]="{ _selectedroom: item === dataInfo }" (click)="roomSelect(item)" class="_room"
+                    *ngFor="let i = index; let item of getFloorArray(i)">
+                    <img src="assets/images/room.png" alt="">
+                    <p>{{item.roomNo}}</p>
+                </div>
+            </mat-expansion-panel>
+            </div>
+        </div>
+            
+               
+                
+               <!-- <div [ngClass]="{ _selectedroom: item === dataInfo }" (click)="roomSelect(item)" class="_room"
+                    *ngFor="let i = index; let item of getFloorArray(i)">
+                    <img src="assets/images/room.png" alt="">
+                    <p>{{item.roomNo}}</p>
+                </div>-->
+        <div class="row">
+            <div class="col" style="text-align: center;">
+                <button (click)="assignRoom(profile.studentInfo)" style="background-color: #ccc;"
+                    [disabled]="dataInfo==null" color="accent" mat-raised-button> Assign Room</button>
+            </div>
+        </div>
+    </main>
+    <div class="right">
+        <div class="_room_data" *ngIf="dataInfo?.studentInfo!">
+            <h4 class="_heading">Room Information</h4>
+            <mat-card style="background-color: #fff;">
+                <mat-card-content class="_content">
+                    <p><span>Room ID:</span><span>{{dataInfo?._id}}</span></p>
+                    <p><span>Room Number:</span><span>{{dataInfo?.roomNo}}</span></p>
+                    <p><span>Room Type:</span><span>{{dataInfo?.roomType}}</span></p>
+                    <p><span>Floor No:</span><span>{{dataInfo?.floorNo}}</span></p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <br><br>
+        <div class="_std_data" *ngIf="dataInfo?.studentInfo!">
+            <h4 class="_heading">Students Assigned</h4>
+            <mat-card *ngFor="let obj of dataInfo!.studentInfo" class="example-card"
+                style="background-color: #fff;margin-bottom: 5px;">
+                <mat-card-header>
+                    <mat-card-title>{{obj.name}} <small>({{obj.rollNumber}})</small></mat-card-title>
+                    <mat-card-subtitle style="color: #ccc;">{{obj.email}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p style="display: flex;justify-content: space-between;">
+                        <span>Branch: {{obj.branch}}</span>
+                        <span>Year: {{obj.year}}</span>
+                    </p>
+                    <p>Address: {{obj.address}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>

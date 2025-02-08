@@ -1,0 +1,119 @@
+<body>
+  <header>
+    <div onclick="location.href = 'https://nith.ac.in/'" class="logo">
+      <img src="assets/images/logo1.png" alt="" />
+    </div>
+    <div>
+      <h1>National Institute Of Technology Hamirpur</h1>
+      <h2>(An Institute of National Importance)</h2>
+    </div>
+  </header>
+
+  <main>
+    <button mat-button [matMenuTriggerFor]="About">
+      <div class="valin"> <span class="a">About Nith</span><i class="material-icons">arrow_drop_down</i></div>
+    </button>
+
+    <button mat-button><a href="https://nith.ac.in/hostels-at-nith"><span class="a">Hostel</span></a></button>
+
+    <button mat-button [matMenuTriggerFor]="Links">
+      <div class="valin"> <span class="a">Important Link</span><i class="material-icons">arrow_drop_down</i></div>
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="User">
+      <div class="valin"> <span class="a">user</span><i class="material-icons">arrow_drop_down</i></div>
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="download">
+      <div class="valin"> <span class="a">Downloads</span><i class="material-icons">arrow_drop_down</i></div>
+    </button>
+
+    <button mat-button><span><a class="a" href="login">Student Login</a></span></button>
+
+    <button mat-button><span><a class="a" href="manage/login">Admin Login</a></span></button>
+
+    <mat-menu #User="matMenu">
+      <button mat-menu-item [matMenuTriggerFor]="services"><span class="a">services</span></button>
+      <button mat-menu-item><span class="a">services</span></button>
+    </mat-menu>
+
+    <mat-menu #services="matMenu">
+      <button mat-menu-item><span class="a">services</span></button>
+      <button mat-menu-item><span class="a">services</span></button>
+    </mat-menu>
+
+    <mat-menu #About="matMenu">
+      <button mat-menu-item><a href="https://nith.ac.in/nith-history"><span class="a">History</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/vision-mission"><span class="a">vision & mission</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/goals"><span class="a">Goal</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/core-values"><span class="a">Core Values</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/about-city"><span class="a">About city</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/connectivity"><span class="a">Connectivity</span></a></button>
+    </mat-menu>
+
+    <mat-menu #Links="matMenu">
+      <button mat-menu-item><a href="https://nith.ac.in/"><span class="a">Nith</span></a></button>
+      <button mat-menu-item><a href="http://results.nith.ac.in/"><span class="a">Nith Result</span></a></button>
+      <button mat-menu-item><a href="https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Hamirpur"><span class="a">Wikipedia</span></a></button>
+      <button mat-menu-item><a href="https://library.nith.ac.in/library/#gallery/libimages/1.jpg"><span class="a">nith library</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/about-city"><span class="a">About city</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/connectivity"><span class="a">Connectivity</span></a></button>
+    </mat-menu>
+
+    <mat-menu #download="matMenu">
+      <button mat-menu-item><a href="https://nith.ac.in/downloads-for-students"><span class="a">For Student</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/downloads-for-faculty-staff"><span class="a">For Faculty</span></a></button>
+      <button mat-menu-item><a href="https://nith.ac.in/miscellaneous-downloads"><span class="a">Mislineous</span></a></button>
+    </mat-menu>
+  </main>
+
+  <section>
+    <style>
+      .imageSlider {
+        margin: 1.5rem;
+        /* padding: 0; */
+        box-sizing: border-box;
+        /* width: 60%; */
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: .5cm;
+        /* padding: 2vw 5vw; */
+        /* background-image: url("images/img1.jpg"); */
+        background-size: 100% 100%;
+        box-shadow: rgba(149. 157, 165, 0.2) 0px 8px 24px;
+        animation: changeimg 20s linear infinite;
+      }
+
+      @keyframes changeimg {
+        0% {
+          background-image: url("assets/images/img1.jpg");
+        }
+
+        25% {
+          background-image: url("assets/images/img2.jpg");
+        }
+
+        75% {
+          background-image: url("assets/images/img3.jpg");
+        }
+
+        100% {
+          background-image: url("assets/images/img4.jpg");
+        }
+      }
+    </style>
+    <div class="imageSlider"></div>
+  </section>
+
+  <div class="right">
+    <app-announcements></app-announcements>
+  </div>
+
+</body>
+
+
+
+<!--<button mat-menu-item [[matMenuTriggerFor]="services"]>services</button>-->

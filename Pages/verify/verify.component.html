@@ -1,0 +1,25 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="logo" title="Online Hostel Management System">
+        <img src="assets/images/ezee-logo.png" alt="">
+        <h2>H<span class="danger">M</span>S</h2>
+    </div>
+</header><!-- End Header -->
+<div class="container">
+    <app-aside-profile style="display: none;" #profile></app-aside-profile>
+    <p></p>
+    <main>
+        <mat-card *ngIf="studentId === '0'">
+            <mat-card-subtitle> Mail Sent</mat-card-subtitle>
+            <mat-card-content>
+                <p> Mail is sent to your registered mail address, <br /> kindly verify to login</p>
+            </mat-card-content>
+        </mat-card>
+        <mat-card *ngIf="studentId === profile?.studentInfo?._id">
+            <mat-card-subtitle> Mail Verified</mat-card-subtitle>
+            <mat-card-content>
+                <p> Your mail is successfully verified, <br /> <a mat-raised-button [routerLink]="['/home']">Go to
+                        Panel</a> </p>
+            </mat-card-content>
+        </mat-card>
+    </main>
+</div>

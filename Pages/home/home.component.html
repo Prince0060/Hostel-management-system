@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<div class="container">
+
+    <app-aside-profile #profile></app-aside-profile>
+    <main>
+        
+        <div class="_com" *ngIf="profile?.roomInfo">
+            <h1>Open Complaints</h1>
+            <div class="_message" *ngIf="complaintsInfo?.length==0">
+                No Open Complaints...
+            </div>
+            <div class="subjects">
+                <div class="eg" *ngFor="let obj of complaintsInfo">
+                    <mat-icon>{{setIcon(obj.complaintType)}}</mat-icon>
+                    <h3>{{obj.complaintType}}</h3>
+                    <h6>{{obj._id | slice:0:20}}</h6>
+                    <div class="description">
+                        {{obj.description}}
+                    </div>
+                    <small class="text-muted">{{obj.createdAt | lasttimeago}}</small>
+                </div>
+            </div>
+        </div>
+        <div class="_com" *ngIf="!profile?.roomInfo">
+            <br><br>
+            <div class="_message">
+                Room Not Assigned Yet...
+            </div>
+        </div>
+    </main>
+
+    <div class="right">
+        <app-announcements></app-announcements>
+    </div>
+</div>

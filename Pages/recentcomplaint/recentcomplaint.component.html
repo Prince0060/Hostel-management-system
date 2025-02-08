@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="container">
+    <app-aside-profile></app-aside-profile>
+    <main>
+        <br>
+        <div class="row text-end" style="text-align: right;">
+            <div class="col">
+                <button [routerLink]="['/newcomplaint']" mat-raised-button color="primary">
+                    <mat-icon>book</mat-icon>
+                    Book a Complaint
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="_datatable" *ngIf="dataSource">
+            <app-table91 tableTitle="Complaints" linkEdit="/manage/catalog/categoryedit/"
+                [displayedColumns]="displayedColumns" [dataSource]="dataSource"></app-table91>
+        </div>
+
+    </main>
+    <div class="right">
+        <app-announcements></app-announcements>
+    </div>
+</div>
