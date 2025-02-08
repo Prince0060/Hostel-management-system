@@ -1,0 +1,10 @@
+<div class="announcements">
+    <h2>Announcements</h2>
+    <div class="updates">
+        <div class="message" *ngFor="let obj of announcementObj">
+            <p> <b>{{obj.heading}}</b> {{obj.description}}</p>
+            <small class="text-muted">{{obj.createdAt | lasttimeago}}</small>
+            <!-- <p>{{obj.roll-no}}</p> -->
+        </div>
+    </div>
+</div>

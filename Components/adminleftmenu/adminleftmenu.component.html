@@ -1,0 +1,61 @@
+<aside id="sidebar" class="sidebar">
+
+    <div class="top">
+        <div class="profile-photo">
+            <img src="assets/images/user.png" alt="image_user">
+        </div>
+        <div class="info">
+            <p>Hey, <b>{{userInfo?.name}}</b> </p>
+            <small class="text-muted">Admin</small>
+        </div>
+    </div>
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manage','dashboard']" routerLinkActive="active">
+                <mat-icon>dashboard</mat-icon>
+                <span>Dashboard</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manage','students']" routerLinkActive="active">
+                <mat-icon>person</mat-icon>
+                <span>Students</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manage','rooms']" routerLinkActive="active">
+                <mat-icon>meeting_room</mat-icon>
+                <span>Rooms</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manage','roomallot']" routerLinkActive="active">
+                <mat-icon>ballot</mat-icon>
+                <span>Allocation(4th Year)</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manage','complaints']" routerLinkActive="active">
+                <mat-icon>report_problem</mat-icon>
+                <span>Complaints</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/manage','notices']" routerLinkActive="active">
+                <mat-icon>announcement</mat-icon>
+                <span>Announcements</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" (click)="Logout()">
+                <mat-icon>logout</mat-icon>
+                <span>Logout</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+    </ul>
+    <div class="_message">
+        Copyright &copy;HMS
+    </div>
+
+</aside><!-- End Sidebar-->

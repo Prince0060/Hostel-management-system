@@ -1,0 +1,28 @@
+<aside>
+    <div class="profile">
+        <div class="top">
+            <div class="profile-photo">
+                <img src="assets/images/user.png" alt="image_user">
+            </div>
+            <div class="info">
+                <p>Hey, <b>{{studentInfo?.name}}</b> </p>
+                
+                <small class="text-muted" style="display: block;">
+                    <span style="color: var(--color-danger);">Room No: {{roomInfo?.roomNo}}</span>
+                </small>
+            </div>
+        </div>
+        <div class="about">
+            <h5>Course</h5>
+            <p>{{studentInfo?.branch}}, Year:{{studentInfo?.year}}</p>
+            <h5>Roll Number</h5>
+            <p>{{studentInfo?.rollNumber}}</p>
+            <h5>Contact</h5>
+            <p>{{studentInfo?.contactNumber}}</p>
+            <h5>Email</h5>
+            <p>{{studentInfo?.email}}</p>
+            <h5>Address</h5>
+            <p>{{studentInfo?.address}}</p>
+        </div>
+    </div>
+</aside>

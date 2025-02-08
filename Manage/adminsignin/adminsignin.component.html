@@ -1,0 +1,29 @@
+<div class="container">
+    <main>
+
+        <div class="change-password-container">
+
+            <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+                <div class="logo" title="Online Hostel Management System">
+                    <img src="assets/images/ezee-logo.png" alt="">
+                    <h2>H<span class="danger">M</span>S</h2>
+                </div>
+                <h2>Admin SignIn</h2>
+                <p class="text-muted">Signin with your login credentials.</p>
+                <div class="box">
+                    <p class="text-muted">Email Address</p>
+                    <input required email placeholder="Enter Email Address" formControlName="email" type="email">
+                </div>
+                <div class="box">
+                    <p class="text-muted">Password</p>
+                    <input required placeholder="Enter Password" type="password" formControlName="password"
+                        id="newpass">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Login" mat-raised-button color="primary" class="btn">
+                    <a class="text-muted">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>

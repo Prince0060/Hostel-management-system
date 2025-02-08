@@ -1,0 +1,62 @@
+<app-adminheader></app-adminheader>
+<div class="container">
+    <app-adminleftmenu></app-adminleftmenu>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Complaint Info</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/manage/dashboard">Home</a></li>
+                    <li class="breadcrumb-item active">Complaint Info</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <div class="row">
+            <div class="col" style="text-align: right;">
+                <span class="_dds">Date: {{dataInfo.createdAt | date: 'dd MMM yyyy hh:ss'}}</span>
+            </div>
+        </div>
+        <mat-card>
+            <mat-card-subtitle> {{dataInfo.complaintType}} </mat-card-subtitle>
+            <mat-card-content>
+                <p>Description: {{dataInfo.description}}</p>
+                <p>Status: {{dataInfo.action ===1?"Open": "Closed"}}</p>
+
+                <hr>
+                <div class="_info">
+                    <h3>Room Info</h3>
+                    <div class="row">
+                        <div class="col">
+                            <p><span>Room Id:</span><span>{{dataInfo.roomInfo._id}}</span></p>
+                        </div>
+                        <div class="col">
+                            <p><span>Room Type:</span><span>{{dataInfo.roomInfo.roomType}}</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p><span>Room Number:</span><span>{{dataInfo.roomInfo.roomNo}}</span></p>
+                        </div>
+                        <div class="col">
+                            <p><span>Floor No.:</span><span>{{dataInfo.roomInfo.floorNo}}</span></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="_info">
+                    <h3>Student Info</h3>
+                    <p><span>Student Id:</span><span>{{dataInfo.studentInfo._id}}</span></p>
+                    <p><span>Name:</span><span>{{dataInfo.studentInfo.name}}</span></p>
+                </div>
+                <hr>
+            </mat-card-content>
+            <mat-card-actions *ngIf="dataInfo.action ===1">
+                <button (click)="close(dataInfo._id)" color="primary" mat-raised-button> Close Complaint</button>
+            </mat-card-actions>
+        </mat-card>
+    </main>
+    <div class="right">
+        <app-announcements></app-announcements>
+    </div>
+</div>

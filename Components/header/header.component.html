@@ -1,0 +1,32 @@
+<header>
+    <div class="logo" title="Online Hostel Management System">
+        <img src="assets/images/ezee-logo.png" alt="">
+        <h2>H<span class="danger">M</span>S</h2>
+    </div>
+    <div class="navbar">
+        <a [routerLink]="['/home']" routerLinkActive="active">
+            <mat-icon>home</mat-icon>
+            <h3>Home</h3>
+        </a>
+        <a [routerLink]="['/recentcomplaint']" routerLinkActive="active" onclick="timeTableAll()">
+            <mat-icon>today</mat-icon>
+            <h3>Complaint</h3>
+        </a>
+        <a [routerLink]="['/changepassword']" routerLinkActive="active">
+            <mat-icon>password</mat-icon>
+            <h3>Change Password</h3>
+        </a>
+        <a (click)="Logout()">
+            <mat-icon>logout</mat-icon>
+            <h3>Logout</h3>
+        </a>
+    </div>
+    <div id="profile-btn">
+        <span class="material-icons-sharp">person</span>
+    </div>
+    <div class="theme-toggler">
+        <mat-icon class="active">light_mode</mat-icon>
+        <mat-icon>dark_mode</mat-icon>
+    </div>
+
+</header>

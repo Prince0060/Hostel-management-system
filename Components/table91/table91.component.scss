@@ -1,0 +1,36 @@
+table,
+mat-paginator {
+  width: 100%;
+
+  th.mat-header-cell {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+.table-header {
+  background-color: var(--color-primary);
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 16px;
+  font-weight: 700;
+
+  i {
+    vertical-align: sub;
+    margin-right: 5px;
+  }
+}
+
+mat-card-content {
+  background-color: #fff;
+}
+
+table {
+  tr {
+    background-color: #fff;
+  }
+}
+mat-paginator,cdk-overlay-pane mat-mdc-select-panel-above{
+  background-color: var(--color-warning);
+}

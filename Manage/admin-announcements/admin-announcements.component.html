@@ -1,0 +1,32 @@
+<app-adminheader></app-adminheader>
+<div class="container">
+    <app-adminleftmenu></app-adminleftmenu>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Announcements</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/manage/dashboard">Home</a></li>
+                    <li class="breadcrumb-item active">Announcements</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <div class="row">
+            <div class="col _right_align">
+                <a [routerLink]="['/manage','addnotices']" color="accent" mat-raised-button>
+                    <mat-icon>add</mat-icon>
+                    Add New
+                </a>
+            </div>
+        </div>
+        <div class="_datatable" *ngIf="dataSource">
+            <app-table91 (onDeleteButton)="deleteme($event)" tableTitle="Announcements" linkEdit="/manage/catalog/categoryedit/"
+                [displayedColumns]="displayedColumns" [dataSource]="dataSource"></app-table91>
+        </div>
+
+    </main>
+    <div class="right">
+        <app-announcements></app-announcements>
+    </div>
+</div>

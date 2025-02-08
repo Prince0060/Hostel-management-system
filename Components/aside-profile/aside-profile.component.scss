@@ -1,0 +1,39 @@
+/* Profile section  */
+aside .profile {
+    margin-top: 2rem;
+    width: 13rem;
+    position: fixed;
+}
+
+aside .profile .top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 1rem;
+}
+
+aside .profile .top:hover .profile-photo {
+    scale: 1.05;
+}
+
+aside .profile .top .profile-photo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--color-light);
+    transition: all 400ms ease;
+}
+
+aside .profile .about p {
+    padding-bottom: 0.2rem;
+}
+
+aside .profile .about {
+    margin-top: 1rem;
+
+    h5 {
+        margin-bottom: 2px;
+    }
+}

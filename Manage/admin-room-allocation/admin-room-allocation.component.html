@@ -1,0 +1,49 @@
+<app-adminheader></app-adminheader>
+<div class="container">
+    <app-adminleftmenu></app-adminleftmenu>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Room Allocation (4th Year)</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/manage/dashboard">Home</a></li>
+                    <li class="breadcrumb-item active">Rooms</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+        <div class="row">
+            <div class="col _right_align">
+                <a (click)="allotRoomsAuto()" color="accent" mat-raised-button>
+                    <mat-icon>add</mat-icon>
+                    Allot Rooms via CG(%)
+                </a>
+            </div>
+        </div>
+
+        <div class="_table" *ngIf="dataInfo">
+            <div class="_tab_head">
+                <ul>
+                    <li>SrNo</li>
+                    <li>Name</li>
+                    <li>Roll No.</li>
+                    <li>R1</li>
+                    <li>R2</li>
+                    <li>R3</li>
+                    <li>R4</li>
+                    <li>R5</li>
+                </ul>
+            </div>
+            <div class="_tab_body">
+                <ul *ngFor="let obj of dataInfo;let i = index">
+                    <li>{{i+1}}</li>
+                    <li>{{obj.name}}</li>
+                    <li>{{obj.rollNumber}}</li>
+                    <li *ngFor="let rObj of obj.roomSuggestion">{{rObj.roomNo}}</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="right">
+        <app-announcements></app-announcements>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.announcements h2 {
+    margin-bottom: .8rem;
+    margin-left: .4em;
+}
+
+.announcements .updates {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.announcements .updates:hover {
+    box-shadow: none;
+}
+
+.announcements .updates .message {
+    gap: 1rem;
+    line-height: 1.5;
+    padding: .5rem 0;
+}

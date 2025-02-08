@@ -1,0 +1,44 @@
+<app-adminheader></app-adminheader>
+<div class="container">
+    <app-adminleftmenu></app-adminleftmenu>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Announcements</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/manage/dashboard">Home</a></li>
+                    <li class="breadcrumb-item active">Announcements</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <div class="change-password-container">
+
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+                <h2>Add Announcement</h2>
+                <p class="text-muted">New message to the students!</p>
+                <div class="box">
+                    <p class="text-muted">Heading</p>
+                    <input required placeholder="Enter Heading" formControlName="heading" type="text">
+                </div>
+
+                <div class="box">
+                    <p class="text-muted">Description</p>
+                    <textarea rows="2" placeholder="Enter Description" required formControlName="description"></textarea>
+                </div>
+                <div class="box">
+                    <p class="text-muted">Announcement Type</p>
+                    <input required placeholder="Roll.no/All" formControlName="rollno" type="text">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Add" mat-raised-button color="primary" class="btn">
+                    <a class="text-muted">Cancel</a>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <div class="right">
+        <app-announcements></app-announcements>
+    </div>
+</div>

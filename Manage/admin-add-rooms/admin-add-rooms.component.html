@@ -1,0 +1,74 @@
+<app-adminheader></app-adminheader>
+<div class="container">
+    <app-adminleftmenu></app-adminleftmenu>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Add/Update Room</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/manage/dashboard">Home</a></li>
+                    <li class="breadcrumb-item active">Add Room</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <div class="change-password-container">
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+                <h2 *ngIf="this.roomId==='0'">Add Room</h2>
+                <h2 *ngIf="this.roomId !=='0'">Update Room</h2>
+                <p class="text-muted">Increase hostel wealth by adding rooms!</p>
+                <div class="box">
+                    <p class="text-muted">Room Number</p>
+                    <input required placeholder="Enter Room Number" formControlName="roomNo" type="text">
+                </div>
+                <div class="box">
+                    <p class="text-muted">Room Type</p>
+                    <select className="_reg_select" formControlName="roomType">
+                        <option selected value="Sharing">Sharing</option>
+                        <option value="Single">Single</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p class="text-muted">Floor No</p>
+                    <select className="_reg_select" formControlName="floorNo">
+                        <option selected value="1">1st Floor</option>
+                        <option value="2">2nd Floor</option>
+                        <option value="3">3rd Floor</option>
+                        <option value="4">4th Floor</option>
+                        <option value="5">5th Floor</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <input type="submit" [value]="this.roomId==='0'?'Add':'Update'" mat-raised-button color="primary"
+                        class="btn">
+                    <a class="text-muted">Cancel</a>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <div class="right">
+        <app-announcements *ngIf="this.roomId==='0'"></app-announcements>
+
+        <div class="_std_data" *ngIf="dataInfo?.studentInfo!">
+            <h4 class="_heading">Student Data</h4>
+            <mat-card *ngFor="let obj of dataInfo!.studentInfo" class="example-card" style="background-color: #fff;">
+                <mat-card-header>
+                    <mat-card-title>{{obj.name}} <small>({{obj.rollNumber}})</small></mat-card-title>
+                    <mat-card-subtitle style="color: #ccc;">{{obj.email}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p style="display: flex;justify-content: space-between;">
+                        <span>Branch: {{obj.branch}}</span>
+                        <span>Year: {{obj.year}}</span>
+                    </p>
+                    <p>Address: {{obj.address}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button (click)="unassign(obj._id)">EXIT</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+
+    </div>
+</div>
